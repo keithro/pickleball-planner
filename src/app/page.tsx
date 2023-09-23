@@ -1,3 +1,4 @@
+import Feed from "@/components/Feed";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
           friends and play some pickleball!
         </p>
 
-        {/* <Feed /> */}
+        <Feed />
       </section>
     </main>
   );
