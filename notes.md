@@ -11,8 +11,11 @@ Search and join games in your area or schedule your own games or drill sessions 
 - Next.js
 - TypeScript
 - Tailwind.CSS
-- tRPC - backend type safety
-  X React Query - state management
+  ~~tRPC - backend type safety~~ \* I think Drizzle already does this
+  ~~React Query - state management~~
 - Zustand - state management
-- Prisma - database ORM
+- Drizzle - database ORM
+  ~~Prisma - database ORM~~
 - Zod - Input validation
+
+\*\* Will need to add uploadthing to next.config.js if you use it
