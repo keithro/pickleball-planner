@@ -1,3 +1,4 @@
+import SignIn from "@/components/SignIn";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 
@@ -9,6 +10,8 @@ const Page = () => {
           <ChevronLeft className="" />
           Home
         </Link>
+
+        <SignIn />
       </div>
     </div>
   );

@@ -13,7 +13,8 @@ const Navbar = async () => {
           </p>
         </Link>
 
-        {/* Sign In TODO: style like button */}
+        {/* Sign up / Sign in */}
+        {/* TODO: style like button */}
         <Link href="sign-in">Sign In</Link>
       </div>
     </div>
