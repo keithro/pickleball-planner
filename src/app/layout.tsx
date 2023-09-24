@@ -1,4 +1,4 @@
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -16,17 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {/* <div className="main border">
-          <div className="gradient" />
-        </div> */}
+    <html lang="en" className={inter.className}>
+      <body className="min-h-screen antialiased">
+        <Navbar />
 
-        <main className="app">
-          <Nav />
-
+        <div className="container max-w-7xl mx-auto h-full pt-12">
           {children}
-        </main>
+        </div>
       </body>
     </html>
   );
