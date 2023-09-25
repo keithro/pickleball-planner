@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icons } from "./Icons";
+import { buttonVariants } from "./ui/Button";
 
 const Navbar = async () => {
   return (
@@ -14,8 +15,9 @@ const Navbar = async () => {
         </Link>
 
         {/* Sign up / Sign in */}
-        {/* TODO: style like button */}
-        <Link href="sign-in">Sign In</Link>
+        <Link href="sign-in" className={buttonVariants()}>
+          Sign In
+        </Link>
       </div>
     </div>
   );
