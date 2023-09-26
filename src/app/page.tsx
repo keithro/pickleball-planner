@@ -9,7 +9,7 @@ export default function Home() {
           Pickleball Planner Pro
           {/* <br className="max-md:hidden" /> */}
         </h1>
-        <h2 className="text-center text-4xl font-bold">Plan Your Next Game</h2>
+        <h2 className="text-center text-4xl font-bold">Find Your Next Game!</h2>
         <p className="desc text-center">
           Find games near you or plan your own games to get together with
           friends and play some pickleball!
