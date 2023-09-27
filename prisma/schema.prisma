@@ -12,6 +12,7 @@ datasource db {
 }
 
 // Next Auth Schemas
+// copied/pasted from: https://authjs.dev/reference/adapter/prisma
 model Account {
   id                String  @id @default(cuid())
   userId            String
@@ -47,7 +48,8 @@ model User {
   name          String?
   email         String?   @unique
   emailVerified DateTime?
-  image         String?
+  username      String?   @unique
+  image         String? // could change to "picture" to be consitant with session token
   accounts      Account[]
   sessions      Session[]
 }

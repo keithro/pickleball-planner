@@ -11,6 +11,7 @@ Search and join games in your area or schedule your own games or drill sessions 
 - Next.js
 - TypeScript
 - Tailwind.CSS
+- shadcn UI library
 - tRPC - backend type safety
   X React Query - state management
 - Zustand - state management

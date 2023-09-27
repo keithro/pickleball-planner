@@ -16,7 +16,7 @@ const SignIn = () => {
         {/* Sign in form (Client Component) */}
         <UserAuthForm />
 
-        <p className="px-8 text-center text-sm">
+        <p className="px-8 text-center text-sm text-muted-foreground">
           Don&apos;t have an account?{" "}
           <Link
             href="/sign-up"
