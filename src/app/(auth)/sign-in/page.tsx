@@ -17,7 +17,7 @@ const Page = () => {
         <Link
           href="/"
           className={cn(
-            buttonVariants({ variant: "ghost" }),
+            buttonVariants({ variant: "outline" }),
             "self-start -mt-20"
           )}
         >

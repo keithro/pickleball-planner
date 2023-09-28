@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="min-h-screen antialiased light">
+      <body className="min-h-screen pt-12 antialiased light">
         <Navbar />
 
         <div className="container max-w-7xl mx-auto h-full pt-12">
