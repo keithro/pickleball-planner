@@ -18,7 +18,6 @@
 # misc
 .DS_Store
 *.pem
-nextjs-notes.md
 
 # debug
 npm-debug.log*

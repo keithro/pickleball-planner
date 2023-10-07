@@ -1,7 +1,9 @@
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/Toaster";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,21 +14,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  authModal,
 }: {
   children: React.ReactNode;
+  authModal: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {/* <div className="main border">
-          <div className="gradient" />
+    <html lang="en" className="light">
+      <body className={cn("min-h-screen antialiased light", inter.className)}>
+        <Navbar />
+        {/* --- Parallel Route --- */}
+        {authModal}
+
+        {children}
+        {/* <div className="container max-w-7xl mx-auto h-full pt-12">
+          {children}
         </div> */}
 
-        <main className="app">
-          <Nav />
-
-          {children}
-        </main>
+        <Toaster />
       </body>
     </html>
   );
