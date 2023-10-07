@@ -8,12 +8,6 @@ const Page = () => {
   return (
     <div className="absolute inset-0">
       <div className="h-full max-w-2xl mx-auto flex flex-col items-center justify-center gap-20">
-        {/* REMOVE: fix this link? or is it fine now? */}
-        {/* <Link href="/" className="self-start -mt-20 flex">
-          <ChevronLeft className="mr-2 h-4 w-4" />
-          Home
-        </Link> */}
-
         <Link
           href="/"
           className={cn(

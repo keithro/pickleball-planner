@@ -45,7 +45,7 @@ const UserAccountNav: React.FC<UserAccountNavProps> = ({ user }) => {
           {/* <div className="flex space-y-1 "> */}
           {user.name && <p className="font-medium">{user.name}</p>}
           {user.email && (
-            <p className="w-[200px] truncate font-small text-muted-foreground">
+            <p className="w-[200px] truncate text-sm text-muted-foreground">
               {user.email}
             </p>
           )}
@@ -59,8 +59,14 @@ const UserAccountNav: React.FC<UserAccountNavProps> = ({ user }) => {
         </DropdownMenuItem>
 
         <DropdownMenuItem>
-          <Link href="/create">Create</Link>
+          <Link href="/create">Add Game</Link>
         </DropdownMenuItem>
+
+        <DropdownMenuItem>
+          <Link href="/create">Past Games</Link>
+        </DropdownMenuItem>
+
+        {/* <DropdownMenuSeparator /> */}
 
         <DropdownMenuItem>
           <Link href="/settings">Settings</Link>
