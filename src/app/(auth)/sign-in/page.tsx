@@ -7,12 +7,13 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div className="absolute inset-0">
-      <div className="h-full max-w-2xl mx-auto flex flex-col items-center justify-center gap-20">
+      <div className="h-full max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 sm:gap-16">
         <Link
           href="/"
           className={cn(
-            buttonVariants({ variant: "outline" }),
+            buttonVariants({ variant: "ghost" }),
             "self-start -mt-20"
+            // "self-start -mt-20 sm:-mt-20"
           )}
         >
           <ChevronLeft className="mr-2 h-4 w-4" />

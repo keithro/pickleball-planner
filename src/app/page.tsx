@@ -1,11 +1,9 @@
+import ButtonColorsTestGrid from "@/components/ButtonColorsTestGrid";
 import Feed from "@/components/Feed";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
 export default function Home() {
-  const btnList = ["default", "destructive", "outline", "secondary", "ghost"];
-
   return (
     <>
       <MaxWidthWrapper className="pb-12 pt-20 sm:pt-32 text-center flex flex-col items-center justify-center">
@@ -26,15 +24,10 @@ export default function Home() {
         </p>
       </MaxWidthWrapper>
 
-      <div className="grid grid-cols-2 gap-2">
-        {btnList.map((btn, i) => {
-          return (
-            <div key={i} className="h-32 grid place-content-center">
-              <Button variant={btn}>{btn}</Button>
-            </div>
-          );
-        })}
-      </div>
+      <MaxWidthWrapper>
+        <Feed />
+        {/* <ButtonColorsTestGrid /> */}
+      </MaxWidthWrapper>
     </>
   );
 }
