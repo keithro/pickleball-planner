@@ -10,7 +10,7 @@ const Navbar = async () => {
   // console.log(session);
 
   return (
-    <div className="sticky top-0 inset-x-0 h-fit border-b bg-zinc-50 py-2 z-10">
+    <div className="sticky top-0 inset-x-0 h-fit border-b bg-secondary py-2 z-10">
       <MaxWidthWrapper className="h-full flex items-center justify-between gap-2">
         {/* Logo */}
         <Link href="/" className="flex gap-2 items-center">

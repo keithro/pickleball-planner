@@ -13,7 +13,7 @@ Search and join games in your area or schedule your own games or drill sessions 
 - Tailwind.CSS
 - shadcn UI library
 - tRPC - backend type safety
-  X React Query - state management
+  ~~X React Query - state management~~
 - Zustand - state management
 - Prisma - database ORM
 - Zod - Input validation
@@ -47,5 +47,17 @@ Search and join games in your area or schedule your own games or drill sessions 
   - Prevent or just warn lower skilled players
   - Min/max
   - Private/open
+  - going
   - Waitlist
-- Map View ????
+- New Venue Screen
+  - page AND the link there should check if admin or Developer (similar to [this](https://youtu.be/yCJH72nZ8DI?si=2BEJam3Pr2BpaGN3&t=586))
+
+## Bugs
+
+- Modal close after clicking "Don't have an account: sign up"
+
+## Decide
+
+- Favorite locations?
+- More than one ambasador per city or multiple cities for ambasador?
+- Still need admin/roles?
